@@ -1,0 +1,41 @@
+<div class="timeline">
+  {{ module.richtext_field }}
+  {% for item in module.timeline %}
+  <div class="container_img_and_content">
+    <div class="container {% if item.add_block_to_right %}right{% endif %}">
+      <div
+        class="content"
+        style="{% if item.timeline_bg_color  %}background:{{item.timeline_bg_color.color}}{% endif %}"
+        >
+        <h3 class="item_header">{{ item.header }}</h3>
+        {% if item.sub_header %} <h4>{{ item.sub_header }}</h4>{% endif %}
+        {% if item.text %} 
+        {% inline_rich_text field="text" value="{{ item.text }}" %}
+        {% endif %}
+      </div>
+    </div>
+    {% if item.image_field.src %} {% set sizeAttrs = 'width="{{
+    item.image_field.width }}" height="{{ item.image_field.height }}"' %} {%
+    if item.image_field.size_type == 'auto' %} {% set sizeAttrs = 'width="{{
+    item.image_field.width }}" height="{{ item.image_field.height }}"' %} {%
+    elif item.image_field.size_type == 'auto_custom_max' %} {% set sizeAttrs =
+    'width="{{ item.image_field.max_width }}" height="{{
+    item.image_field.max_height }}"' %} {% endif %} {% set loadingAttr =
+    item.image_field.loading != 'disabled' ? 'loading="{{
+    item.image_field.loading }}"' : '' %}
+    <img
+    src="{{ item.image_field.src }}"
+    alt="{{ item.image_field.alt }}"
+    {{
+    loadingAttr
+    }}
+    {{
+    sizeAttrs
+    }}
+    class="timeline_image {% if item.add_block_to_right %}left{% endif %} {% if module.shadow_to_images %} shadow {% endif %}"
+    />
+    {% endif %}
+  </div>
+  {% endfor %}
+</div>
+</div>

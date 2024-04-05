@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --white: #ffffff;
+  --black: #000;
+  --backround-red: #ff0201;
+  --button: #dc2c2c;
+  --button-hover: #bd0000;
+  --face: #e3ac8f;
+  --text-shadow: #003cd7;
+}
+
+.th-body {
+  margin: 0;
+  background: var(--backround-red);
+}
+
+a {
+  color: var(--black);
+}
+
+a:hover {
+  color: var(--black);
+}

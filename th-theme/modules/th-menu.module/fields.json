@@ -1,0 +1,11 @@
+[
+    {
+     "display_width": null,
+     "id": "d529473e-7026-ac19-af87-1a0062d79f4f",
+     "label": "Rich text menu",
+     "locked": false,
+     "name": "rich_text_menu",
+     "required": false,
+     "type": "richtext"
+    }
+   ]

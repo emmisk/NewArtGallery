@@ -1,0 +1,109 @@
+[
+    {
+     "display_width": null,
+     "id": "ba463b40-d6d8-8255-c864-9232a2045a39",
+     "label": "Rich text",
+     "locked": false,
+     "name": "richtext_field",
+     "required": false,
+     "type": "richtext"
+    },
+    {
+     "children": [
+      {
+       "allow_new_line": false,
+       "display_width": null,
+       "id": "a8f44d89-22c6-942d-e92d-daa9f8e45f60",
+       "label": "header",
+       "locked": false,
+       "name": "header",
+       "required": false,
+       "show_emoji_picker": false,
+       "type": "text",
+       "validation_regex": ""
+      },
+      {
+       "allow_new_line": false,
+       "display_width": null,
+       "id": "3debb0cf-5f20-8a9e-0195-59bb16169cdc",
+       "label": "sub header",
+       "locked": false,
+       "name": "sub_header",
+       "required": false,
+       "show_emoji_picker": false,
+       "type": "text",
+       "validation_regex": ""
+      },
+      {
+       "display_width": null,
+       "id": "f0b4b8dd-71c4-031b-80fc-be957566ce7b",
+       "label": "text",
+       "locked": false,
+       "name": "text",
+       "required": false,
+       "type": "richtext"
+      },
+      {
+       "default": {
+        "size_type": "auto",
+        "src": "",
+        "alt": null,
+        "loading": "lazy"
+       },
+       "display_width": null,
+       "id": "0b7ee649-04a3-cf12-5309-caf0695458cb",
+       "label": "Image",
+       "locked": false,
+       "name": "image_field",
+       "required": false,
+       "resizable": true,
+       "responsive": true,
+       "show_loading": false,
+       "type": "image"
+      },
+      {
+       "default": false,
+       "display": "checkbox",
+       "display_width": null,
+       "id": "7a10ca7b-ff0c-b1ed-5325-c3235b8e9423",
+       "label": "add block to right",
+       "locked": false,
+       "name": "add_block_to_right",
+       "required": false,
+       "type": "boolean"
+      },
+      {
+       "default": {
+        "color": null,
+        "opacity": null
+       },
+       "display_width": null,
+       "id": "ae3b3b51-36c7-66de-4c19-56fe8dc40352",
+       "label": "timeline_bg_color",
+       "locked": false,
+       "name": "timeline_bg_color",
+       "required": false,
+       "type": "color"
+      }
+     ],
+     "default": [],
+     "display_width": null,
+     "expanded": false,
+     "id": "c457bc0c-296f-dcd7-82f3-c60fff69b8dc",
+     "label": "timeline",
+     "locked": false,
+     "name": "timeline",
+     "occurrence": {},
+     "required": false,
+     "tab": "CONTENT",
+     "type": "group"
+    },
+    {
+     "type": "boolean",
+     "id": "2c96f211-e1a0-ad76-1d23-986329989805",
+     "default": false,
+     "display": "checkbox",
+     "label": "shadow to images",
+     "name": "shadow_to_images"
+    }
+   ]

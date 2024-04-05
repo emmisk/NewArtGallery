@@ -1,0 +1,25 @@
+[
+    {
+     "allow_new_line": false,
+     "display_width": null,
+     "id": "9f35fc07-1151-348c-8084-7443d57596c8",
+     "label": "th-footer-header",
+     "locked": false,
+     "name": "th_footer_header",
+     "required": false,
+     "show_emoji_picker": false,
+     "type": "text",
+     "validation_regex": "",
+     "default": "Yhteystiedot"
+    },
+    {
+     "display_width": null,
+     "id": "2119abe1-0cfe-a281-bb5f-cd136fb4372a",
+     "label": "footer text",
+     "locked": false,
+     "name": "footer_text",
+     "required": false,
+     "type": "richtext",
+     "default": "Tampere, 33100, <a href=\"mailto:emmsk.art@gmail.com\">emmsk.art@gmail.com</a>, Emmi Koistinen"
+    }
+   ]

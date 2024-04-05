@@ -1,0 +1,144 @@
+.timeline {
+  position: relative;
+  max-width: 1000px;
+  margin: 1rem auto;
+  font-family: "Raleway", sans-serif;
+  background: var(--white);
+  padding: 4.5rem;
+}
+
+h2 {
+  font-size: 4rem;
+  font-weight: 100;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  margin-top: 0;
+}
+
+.container {
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+  position: relative;
+  width: 50%;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  left: 50%;
+  margin-left: 1rem;
+  margin-right: -1rem;
+}
+
+.right::after {
+  left: 0;
+}
+
+.item_header {
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  font-weight: 100;
+  text-align: center;
+}
+
+.content {
+  padding: 20px 30px;
+  background-color: var(--white);
+  position: relative;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 20px;
+  padding: 1.75rem;
+  transition: 0.4s ease;
+  overflow-wrap: break-word;
+  margin-bottom: 20px;
+  margin-right: 1rem;
+  font-family: monospace;
+  color: var(--black);
+}
+
+@media screen and (max-width: 600px) {
+  .timeline::after {
+    left: 31px;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .right {
+    left: 0%;
+  }
+}
+
+.container_img_and_content {
+  overflow: hidden;
+  display: flex;
+  margin: 1rem;
+  margin-bottom: 2rem;
+}
+
+.timeline_image {
+  height: auto;
+  max-width: 50%;
+  width: 50%;
+  left: 50%;
+  top: 0%;
+  object-fit: contain;
+  overflow: hidden;
+  width: 100%;
+}
+
+.timeline_image.left {
+  left: 0%;
+  position: sticky;
+  right: 50%;
+}
+
+.timeline_image.shadow {
+  box-shadow: 0 14px 18px 0 rgba(0, 0, 0, 0.77),
+    0 42px 13px 0 rgba(0, 0, 0, 0.77);
+}
+
+@media only screen and (max-width: 800px) {
+  .container {
+    width: 100%;
+  }
+
+  .content {
+    padding: 0 1.75rem;
+  }
+
+  .item_header,
+  h2 {
+    margin-bottom: 0;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  .timeline {
+    padding: 2rem 0;
+  }
+
+  .right {
+    left: 0;
+  }
+
+  .container_img_and_content {
+    display: block;
+  }
+
+  .timeline_image {
+    max-width: 100%;
+  }
+}

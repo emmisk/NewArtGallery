@@ -1,0 +1,106 @@
+[
+    {
+     "allow_new_line": false,
+     "default": "Emsk Art",
+     "display_width": null,
+     "id": "2e761621-7a30-08e4-bdc3-1267560a866b",
+     "label": "header",
+     "locked": false,
+     "name": "header",
+     "required": false,
+     "show_emoji_picker": false,
+     "type": "text",
+     "validation_regex": ""
+    },
+    {
+     "default": 8,
+     "display": "slider",
+     "display_width": null,
+     "id": "b6d02c93-41e8-7e0f-9107-0ce69c8d3114",
+     "label": "header size",
+     "locked": false,
+     "name": "header_size",
+     "required": false,
+     "step": 1,
+     "type": "number"
+    },
+    {
+     "default": {
+      "color": "#FFFFFF",
+      "opacity": 100
+     },
+     "display_width": null,
+     "id": "16c8b01b-73b9-0d62-9431-6cdeb6c76df6",
+     "label": "header color",
+     "locked": false,
+     "name": "header_color",
+     "required": false,
+     "type": "color"
+    },
+    {
+     "allow_new_line": false,
+     "display_width": null,
+     "id": "04c25346-d279-42c9-d98b-22b69773c57d",
+     "label": "subheader",
+     "locked": false,
+     "name": "subheader",
+     "required": false,
+     "show_emoji_picker": false,
+     "type": "text",
+     "validation_regex": "",
+     "default": "Gallery"
+    },
+    {
+     "default": {
+      "color": "#FFFFFF",
+      "opacity": 100
+     },
+     "display_width": null,
+     "id": "fe6826fa-42e2-d0b8-4cb8-97cb1044e651",
+     "label": "subheader color",
+     "locked": false,
+     "name": "subheader_color",
+     "required": false,
+     "type": "color"
+    },
+    {
+     "default": {
+      "size_type": "auto",
+      "src": "",
+      "alt": null,
+      "loading": "lazy"
+     },
+     "display_width": null,
+     "id": "ad4af833-d43a-58e7-0b77-ce777f627ad2",
+     "label": "bg image",
+     "locked": false,
+     "name": "bg_image",
+     "required": false,
+     "resizable": true,
+     "responsive": true,
+     "show_loading": false,
+     "type": "image"
+    },
+    {
+     "default": {
+      "color": null,
+      "opacity": null
+     },
+     "display_width": null,
+     "id": "d4edd966-2b93-b84a-ed5c-e52fe78b4804",
+     "label": "bg color",
+     "locked": false,
+     "name": "bg_color",
+     "required": false,
+     "type": "color"
+    },
+    {
+     "display_width": null,
+     "id": "6701070e-2dba-c1e0-9411-1ff34dce8075",
+     "label": "Rich text",
+     "locked": false,
+     "name": "richtext_field",
+     "required": false,
+     "type": "richtext"
+    }
+   ]

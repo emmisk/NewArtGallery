@@ -1,0 +1,9 @@
+.th_top_button a {
+  color: var(--white);
+  position: fixed;
+  right: 4%;
+  top: 90%;
+  text-decoration: none;
+  font-size: 3rem;
+  z-index: 10;
+}

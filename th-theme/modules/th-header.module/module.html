@@ -1,0 +1,52 @@
+<header
+  class="th-header"
+  {%
+  if
+  module.bg_color.color
+  %}style="background:{{ module.bg_color.color }}"
+  {%
+  endif
+  %}
+>
+  {% if module.bg_image.src %} {% set sizeAttrs = 'width="{{
+  module.bg_image.width }}" height="{{ module.bg_image.height }}"' %} {% if
+  module.bg_image.size_type == 'auto' %} {% set sizeAttrs = 'width="{{
+  module.bg_image.width }}" height="{{ module.bg_image.height }}"
+  style="max-width: 100%; height: 100%;"' %} {% elif module.bg_image.size_type
+  == 'auto_custom_max' %} {% set sizeAttrs = 'width="{{
+  module.bg_image.max_width }}" height="{{ module.bg_image.max_height }}"
+  style="max-width: 100%; height: 100%;"' %} {% endif %} {% set loadingAttr =
+  module.bg_image.loading != 'disabled' ? 'loading="{{ module.bg_image.loading
+  }}"' : '' %}
+  <img
+    class="th-header-image"
+    src="{{ module.bg_image.src }}"
+    alt="{{ module.bg_image.alt }}"
+    {{
+    loadingAttr
+    }}
+    {{
+    sizeAttrs
+    }}
+  />
+  {% endif %}
+  <a href="https://139703876.hubspotpagebuilder.eu/emsk-art">
+    <h1
+      class="th-header-heading"
+      style="{% if module.header_color.color %}color:{{ module.header_color.color }} {% else %}color:#000{% endif %};font-size:{{ module.header_size }}rem;"
+    >
+      {% inline_text field="header" value="{{ module.header }}" %}
+      <strong
+        style="{% if module.subheader_color.color %}color:{{ module.subheader_color.color }} {% else %}color:#000{% endif %};"
+        >{% inline_text field="subheader" value="{{ module.subheader }}"
+        %}</strong
+      >
+    </h1>
+  </a>
+  <p class="th-header-anchor-link">{{ module.richtext_field }}</p>
+  <div class="face"></div>
+  <div class="face hair"></div>
+  <div class="face bangs"></div>
+  <div class="face right-eye"></div>
+  <div class="face left-eye"></div>
+</header>

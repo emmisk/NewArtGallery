@@ -1,0 +1,67 @@
+.th-form-container {
+  background: var(--white);
+  font-family: monospace;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  margin: 0 auto;
+  padding: 2rem;
+  width: 50%;
+  position: relative;
+}
+
+.th-form-text {
+  font-size: 1.5rem;
+}
+
+input.hs-button.primary.large {
+  background: var(--button);
+  border: none;
+  color: var(--white);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+input.hs-button.primary.large:hover {
+  background: var(--button-hover);
+}
+
+.input {
+  padding: 0.5rem 0.5rem 0.5rem 0;
+}
+
+.hs-input {
+  width: 100%;
+  height: 1.5rem;
+}
+
+.hs-fieldtype-textarea.hs-input {
+  height: 5rem;
+}
+
+ul.no-list.hs-error-msgs.inputs-list {
+  color: var(--button);
+}
+
+@media only screen and (min-width: 3000px) {
+  .th-form-container {
+    max-width: 35%;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .th-form-container {
+    width: 45%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .th-form-container {
+    width: 80%;
+  }
+}

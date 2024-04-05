@@ -1,0 +1,25 @@
+<!--
+    templateType: page
+    isAvailableForNewContent: true
+-->
+{% set template_css = "th-theme/css/th-theme.css" %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    {{ require_css(get_asset_url("th-theme/css/th-theme.css")) }} {% if
+    content.html_title %}
+    <title>{{ content.html_title }}</title>
+    {% endif %}
+    <meta name="description" content="{{ content.meta_description }}" />
+    {% if brand_settings.primaryFavicon.src %}
+    <link rel="shortcut icon" href="{{ brand_settings.primaryFavicon.src }}" />
+    {% endif %} {{ standard_header_includes }}
+  </head>
+  <body class="th-body">
+    {% module "th-header" path="/th-theme/modules/th-header.module",
+    label="th-header" %} {% dnd_area "dnd_area" label="Main section" %} {%
+    end_dnd_area %} {{ standard_footer_includes }} {% module "th-footer"
+    path="/th-theme/modules/th-footer.module", label="th-footer" %}
+  </body>
+</html>
