@@ -5,6 +5,8 @@
   font-family: "Raleway", sans-serif;
   background: var(--white);
   padding: 4.5rem;
+  display: grid;
+  grid-template-columns: auto auto auto;
 }
 
 h2 {
@@ -88,11 +90,11 @@ h2 {
 
 .timeline_image {
   height: auto;
-  max-width: 50%;
-  width: 50%;
+  max-width: 100%;
+  /* width: 50%; */
   left: 50%;
   top: 0%;
-  object-fit: contain;
+  /* object-fit: contain; */
   overflow: hidden;
   width: 100%;
 }
@@ -141,4 +143,113 @@ h2 {
   .timeline_image {
     max-width: 100%;
   }
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding: 1rem; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #fff; /* Fallback color */
+  /* background-color: rgb(255 255 255 / 90%); */
+  z-index: 3;
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 75%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content,
+#caption {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  color: #000;
+  font-size: 4rem;
+  font-weight: bold;
+  transition: 0.3s;
+  background: var(--white);
+  border: none;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
+}
+
+.image-content {
+  width: 40rem;
+  margin: auto;
+  text-align: center;
+}
+
+.image-content .item_header {
+  font-size: 1rem;
+}
+
+.container_img_and_content:focus {
+  background: yellow;
+  color: red;
+}
+
+a:focus {
+  padding: 2rem;
 }
