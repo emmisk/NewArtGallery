@@ -12,7 +12,7 @@
 
 .th-body {
   margin: 0;
-  background: var(--backround-red);
+  background: var(--white);
 }
 
 a {
@@ -21,4 +21,13 @@ a {
 
 a:hover {
   color: var(--black);
+}
+
+button.hs-image__grid__list__item__button:focus {
+  outline-width: 1px;
+  outline-color: red;
+}
+
+button.hs-image__grid__list__item__button:focus:not(:focus-visible) {
+  outline: 3px solid #0bf !important;
 }

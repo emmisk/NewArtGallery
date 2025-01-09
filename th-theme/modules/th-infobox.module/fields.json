@@ -1,0 +1,107 @@
+[ {
+  "id" : "ba463b40-d6d8-8255-c864-9232a2045a39",
+  "name" : "richtext_field",
+  "display_width" : null,
+  "label" : "Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext"
+}, {
+  "id" : "c457bc0c-296f-dcd7-82f3-c60fff69b8dc",
+  "name" : "timeline",
+  "display_width" : null,
+  "label" : "timeline",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "a8f44d89-22c6-942d-e92d-daa9f8e45f60",
+    "name" : "header",
+    "display_width" : null,
+    "label" : "header",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "3debb0cf-5f20-8a9e-0195-59bb16169cdc",
+    "name" : "sub_header",
+    "display_width" : null,
+    "label" : "sub header",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "f0b4b8dd-71c4-031b-80fc-be957566ce7b",
+    "name" : "text",
+    "display_width" : null,
+    "label" : "text",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext"
+  }, {
+    "id" : "0b7ee649-04a3-cf12-5309-caf0695458cb",
+    "name" : "image_field",
+    "display_width" : null,
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }
+  }, {
+    "id" : "7a10ca7b-ff0c-b1ed-5325-c3235b8e9423",
+    "name" : "add_block_to_right",
+    "display_width" : null,
+    "label" : "add block to right",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "default" : false
+  }, {
+    "id" : "ae3b3b51-36c7-66de-4c19-56fe8dc40352",
+    "name" : "timeline_bg_color",
+    "display_width" : null,
+    "label" : "timeline_bg_color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : null,
+      "opacity" : null
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ ]
+}, {
+  "id" : "2c96f211-e1a0-ad76-1d23-986329989805",
+  "name" : "shadow_to_images",
+  "display_width" : null,
+  "label" : "shadow to images",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : false
+} ]

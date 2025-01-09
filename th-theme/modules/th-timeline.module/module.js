@@ -3,16 +3,24 @@ const modal = document.getElementById("myModal");
 // Get the image and insert it inside the modal - use its "alt" text as a caption
 const images = document.querySelectorAll('.timeline_image');
 const modalImg = document.getElementById("modalImg");
+const imageHeader = document.querySelectorAll('.item_header');
+const modalHeader = document.getElementById("item_header-model");
+
+const imageContent = document.querySelectorAll('.image-content');
+
 
 for (var i = 0; i < images.length; i++) {
-  images[i].onclick = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
+    images[i].onclick = function(){
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      images.alt = this.alt;
+    //   console.log(images.alt)
+    }
   }
-}
 
   document.addEventListener('keydown', function(event) {
     const modalImg = document.getElementById("modalImg");
+    const imageHeader = document.querySelectorAll('.item_header');
     // Check if the key pressed is "Enter"
         if (event.key === 'Enter') {
         modal.style.display = "block";
@@ -34,3 +42,9 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+document.addEventListener('keydown', function(event) {
+        if (event.key === 'Escape') {
+            modal.style.display = "none";
+      }
+  });

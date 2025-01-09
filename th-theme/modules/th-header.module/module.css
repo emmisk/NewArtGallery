@@ -1,6 +1,6 @@
 .th-header {
   position: relative;
-  height: 52rem;
+  height: 46rem;
 }
 
 .th-header-heading {
@@ -10,9 +10,10 @@
   left: 10%;
   letter-spacing: 1.2rem;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 200;
   z-index: 2;
-  text-shadow: 2px 3px 7px var(--text-shadow), 0 10px 1px var(--text-shadow);
+  /* text-shadow: 2px 3px 7px var(--text-shadow), 0 10px 1px var(--text-shadow); */
+  color: var(--backround-red) !important;
 }
 
 .th-header-image {
@@ -23,7 +24,7 @@
 
 .th-header-heading strong {
   font-size: 50%;
-  color: var(--white);
+  color: var(--backround-red) !important;
 }
 
 .th-header-anchor-link {
@@ -54,7 +55,7 @@
     margin-right: 2rem;
     position: absolute;
     background-color: var(--face);
-    height: 45rem;
+    height: 42rem;
     right: 11%;
     top: 10%;
     width: 26rem;
@@ -62,16 +63,15 @@
   }
 
   .face.hair {
-    height: 48rem;
+    height: 45rem;
     width: 36rem;
     background-color: var(--black);
     box-shadow: 0 13px 8px 19px rgba(0, 0, 0, 0.2),
       0 14px 47px 0 rgba(0, 0, 0, 0.19);
-    height: 130rem;
     right: 4%;
     top: 3%;
     width: 36rem;
-    border-radius: 113% 204% 77% 98%/44% 62% 40% 41%;
+    border-radius: 122% 142% 93% 80%/103% 110% 40% 41%;
     z-index: 0;
   }
 
@@ -144,6 +144,9 @@
   }
   .th-header-anchor-link {
     top: 8%;
+  }
+  .th-header-anchor-link a {
+    color: var(--black);
   }
   .face {
     height: 26rem;

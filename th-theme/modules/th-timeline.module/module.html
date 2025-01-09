@@ -1,20 +1,19 @@
 <div class="timeline">
   {{ module.richtext_field }} {% for item in module.timeline %}
   <div class="container_img_and_content">
-    {#
     <div class="container {% if item.add_block_to_right %}right{% endif %}">
       <div
         class="content"
         style="{% if item.timeline_bg_color  %}background:{{item.timeline_bg_color.color}}{% endif %}"
       >
-        <h3 class="item_header">{{ item.header }}</h3>
+        <h3 class="item_header" id="item_header">{{ item.header }}</h3>
         {% if item.sub_header %}
         <h4>{{ item.sub_header }}</h4>
         {% endif %} {% if item.text %} {% inline_rich_text field="text"
         value="{{ item.text }}" %} {% endif %}
       </div>
     </div>
-    #} {% if item.image_field.src %} {% set sizeAttrs = 'width="{{
+    {% if item.image_field.src %} {% set sizeAttrs = 'width="{{
     item.image_field.width }}" height="{{ item.image_field.height }}"' %} {% if
     item.image_field.size_type == 'auto' %} {% set sizeAttrs = 'width="{{
     item.image_field.width }}" height="{{ item.image_field.height }}"' %} {%
@@ -23,8 +22,8 @@
     item.image_field.max_height }}"' %} {% endif %} {% set loadingAttr =
     item.image_field.loading != 'disabled' ? 'loading="{{
     item.image_field.loading }}"' : '' %}
-    <a href="#" id="input"
-      ><img
+    <button id="input" class="image_link">
+      <img
         src="{{ item.image_field.src }}"
         alt="{{ item.image_field.alt }}"
         {{
@@ -34,19 +33,36 @@
         sizeAttrs
         }}
         class="timeline_image {% if item.add_block_to_right %}left{% endif %} {% if module.shadow_to_images %} shadow {% endif %}"
-    /></a>
-    <div id="myModal" class="modal">
-      <button class="close">&times;</button>
+      />
+    </button>
+
+    <h3 class="item_header">{{ item.header }}</h3>
+    {% if item.sub_header %}
+    <h4>{{ item.sub_header }}</h4>
+    {% endif %} {% if item.text %} {% inline_rich_text field="text" value="{{
+    item.text }}" %} {% endif %}
+
+    <div
+      id="myModal"
+      class="modal"
+      aria-modal="true"
+      role="dialog"
+      aria-labelledby="modalTitle"
+    >
+      <div class="image-content">
+        <img class="modal-content" id="modalImg" alt="modal image" />
+      </div>
+      <button class="close" aria-label="Close">&times;</button>
+    </div>
+
+    {#
+    <div id="myModal" class="modal dialog">
+      <button aria-label="Close" class="close">&times;</button>
       <div class="image-content">
         <img class="modal-content" id="modalImg" />
-        <h3 class="item_header">{{ item.header }}</h3>
-        {% if item.sub_header %}
-        <h4>{{ item.sub_header }}</h4>
-        {% endif %} {% if item.text %} {% inline_rich_text field="text"
-        value="{{ item.text }}" %} {% endif %}
       </div>
     </div>
-    {% endif %}
+    #} {% endif %}
   </div>
   {% endfor %}
 </div>
